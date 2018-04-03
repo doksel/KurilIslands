@@ -61,10 +61,6 @@ header {
   header h1 {
     font-size: 65px;
     font-weight: 500; }
-  header img {
-    height: 100%;
-    width: 100%;
-    position: absolute; }
 
 main {
   height: 1462px; }
