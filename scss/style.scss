@@ -73,15 +73,25 @@ nav{
 }
 header{
     height: 370px;
-    background: blue;
+    background: url("../images/bg3.jpg") no-repeat;
+    background-size: cover;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    h1, p{
+        z-index: 3;
+    }
     h1{
         font-size: 65px;
         font-weight: 500;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        position: absolute;
     }
 }
 main{
