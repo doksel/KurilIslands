@@ -72,4 +72,38 @@ main {
     main .wraper article h5 {
       text-transform: uppercase; }
 
+.latestPost {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around; }
+  .latestPost .wrap-posts {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+
+footer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  footer .menu {
+    flex: 1; }
+    footer .menu ul {
+      height: 100%;
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      footer .menu ul a {
+        display: block;
+        color: black;
+        text-decoration: none; }
+  footer .logos {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center; }
+
 /*# sourceMappingURL=style.css.map */
