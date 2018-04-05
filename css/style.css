@@ -48,7 +48,10 @@ nav {
 
 header {
   height: 370px;
-  background: url("../images/bg3.jpg") no-repeat;
+  background: url("../images/bg3.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   color: white;
   display: flex;
