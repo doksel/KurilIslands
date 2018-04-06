@@ -6,17 +6,12 @@
     padding: 0;
     margin: 0;
 }
-// Small devices (landscape phones, 576px and up)
+
 @media (min-width: 576px) {}
 
-// Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {}
 
-// Large devices (desktops, 992px and up)
 @media (min-width: 992px) {}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
 
 body{
     width: 100vw;
@@ -118,10 +113,21 @@ main{
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
+    h1{
+        margin: 50px;
+    }
     .wrap-posts{
         display: flex;
         align-items: center;
-        justify-content: space-around;     
+        justify-content: space-around;
+        .post{
+            border: solid red 1px;
+            display: grid;
+            grid-gap: 5px;
+            grid-template-areas: "div.img div.title"
+                                "div.img p"
+                                "div.img div.read-more"
+        }  
     }  
 }
 

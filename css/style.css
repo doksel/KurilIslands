@@ -80,10 +80,17 @@ main {
   align-items: center;
   flex-direction: column;
   justify-content: space-around; }
+  .latestPost h1 {
+    margin: 50px; }
   .latestPost .wrap-posts {
     display: flex;
     align-items: center;
     justify-content: space-around; }
+    .latestPost .wrap-posts .post {
+      border: solid red 1px;
+      display: grid;
+      grid-gap: 5px;
+      grid-template-areas: "div.img div.title" "div.img p" "div.img div.read-more"; }
 
 footer {
   height: 100px;
