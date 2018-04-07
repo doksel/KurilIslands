@@ -85,12 +85,30 @@ main {
   .latestPost .wrap-posts {
     display: flex;
     align-items: center;
-    justify-content: space-around; }
+    justify-content: space-around;
+    height: 30vh;
+    margin: 0 50px;
+    border: solid #5a13ac 1px; }
     .latestPost .wrap-posts .post {
       border: solid red 1px;
+      height: 100%;
       display: grid;
-      grid-gap: 5px;
-      grid-template-areas: "div.img div.title" "div.img p" "div.img div.read-more"; }
+      grid-gap: 10px;
+      margin: 0 20px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "img title" "img p" "img p" "img p" "img read-more"; }
+      .latestPost .wrap-posts .post .img {
+        background: url(../images/bg3.jpg) no-repeat;
+        background-size: cover;
+        margin: 10px;
+        grid-area: img; }
+      .latestPost .wrap-posts .post .title {
+        margin-top: 10px;
+        grid-area: title; }
+      .latestPost .wrap-posts .post p {
+        grid-area: p; }
+      .latestPost .wrap-posts .post .read-more {
+        grid-area: read-more; }
 
 footer {
   height: 100px;

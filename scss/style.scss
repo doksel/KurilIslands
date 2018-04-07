@@ -120,13 +120,37 @@ main{
         display: flex;
         align-items: center;
         justify-content: space-around;
+        height: 30vh;
+        margin: 0 50px;
+        border: solid rgb(90, 19, 172) 1px;
         .post{
             border: solid red 1px;
+            height: 100%;
             display: grid;
-            grid-gap: 5px;
-            grid-template-areas: "div.img div.title"
-                                "div.img p"
-                                "div.img div.read-more"
+            grid-gap: 10px;
+            margin: 0 20px;
+            grid-template-columns: repeat(2, 1fr);
+            .img{
+                background: url(../images/bg3.jpg) no-repeat;
+                background-size: cover;
+                margin: 10px;
+                grid-area: img;
+            };
+            .title{
+                margin-top: 10px;
+                grid-area: title;
+            };
+            p{
+                grid-area: p;
+            };
+            .read-more{
+                grid-area: read-more;
+            };
+            grid-template-areas: "img title"
+                                "img p"
+                                "img p"
+                                "img p"
+                                "img read-more";
         }  
     }  
 }
