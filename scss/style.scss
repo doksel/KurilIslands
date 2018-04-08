@@ -133,22 +133,25 @@ main{
             .img{
                 background: url(../images/bg3.jpg) no-repeat;
                 background-size: cover;
-                margin: 10px;
                 grid-area: img;
             };
+            .title, p, .read-more{
+                margin: 0 10px
+            }
             .title{
-                margin-top: 10px;
+                margin-top: 30px;
+                color: gray;
                 grid-area: title;
             };
             p{
                 grid-area: p;
+                font-size: 16px;
+                color: black;
             };
             .read-more{
                 grid-area: read-more;
             };
             grid-template-areas: "img title"
-                                "img p"
-                                "img p"
                                 "img p"
                                 "img read-more";
         }  
