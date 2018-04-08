@@ -44,7 +44,12 @@ nav {
           color: black;
           text-decoration: none; }
     nav .wraper .search {
-      flex: 1; }
+      flex: 1;
+      text-align: center;
+      line-height: 100px; }
+      nav .wraper .search .fa-search {
+        font-size: 18px;
+        color: black; }
 
 header {
   height: 370px;
@@ -64,6 +69,14 @@ header {
   header h1 {
     font-size: 65px;
     font-weight: 500; }
+  header .form {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    border: solid red 1px;
+    background: aqua; }
 
 main {
   height: 1462px; }
@@ -87,10 +100,8 @@ main {
     align-items: center;
     justify-content: space-around;
     height: 30vh;
-    margin: 0 50px;
-    border: solid #5a13ac 1px; }
+    margin: 0 50px 50px 50px; }
     .latestPost .wrap-posts .post {
-      border: solid red 1px;
       height: 100%;
       display: grid;
       grid-gap: 10px;
@@ -105,14 +116,15 @@ main {
         margin: 0 10px; }
       .latestPost .wrap-posts .post .title {
         margin-top: 30px;
-        color: gray;
+        color: #b6b5b5;
         grid-area: title; }
       .latestPost .wrap-posts .post p {
         grid-area: p;
         font-size: 16px;
-        color: bla; }
+        color: black; }
       .latestPost .wrap-posts .post .read-more {
-        grid-area: read-more; }
+        grid-area: read-more;
+        width: auto; }
 
 footer {
   height: 100px;
@@ -120,7 +132,7 @@ footer {
   align-items: center;
   justify-content: space-between; }
   footer .menu {
-    flex: 1; }
+    flex: 2; }
     footer .menu ul {
       height: 100%;
       list-style: none;
@@ -137,5 +149,14 @@ footer {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center; }
+    footer .logos a {
+      display: block;
+      height: 40px;
+      width: 40px;
+      border: solid #b6b5b5 1px;
+      border-radius: 50%;
+      margin: 0 10px;
+      text-align: center;
+      line-height: 40px; }
 
 /*# sourceMappingURL=style.css.map */
