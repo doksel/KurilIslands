@@ -237,10 +237,11 @@ footer{
     position: fixed;
     top: 10%;
     left: 30%;
-    border: solid red 1px;
     border-radius: 10px;
-    background: burlywood;
+    background: rgba(77, 169, 245, 0.856);
     background-size: cover;
+    z-index: 10;
+    color: white;
     .form-row {
         margin-bottom: 8px;
         overflow: hidden;
@@ -252,7 +253,7 @@ footer{
         margin: 0px;
         padding: 0px 5px;
         width: 287px;
-        border: 1px solid #ABADB3;
+        border: solid #ABADB3 1px;
     }
     
     .reg-form {
@@ -269,7 +270,7 @@ footer{
         border: 1px solid #ABADB3;
     }
     
-    .form-row input[type=submit] {
+    .form-row input[type=button] {
         padding:5px;
         height:25px;
         width:100%;
@@ -278,7 +279,7 @@ footer{
         color:white;
     }
     
-    .form-row input[type=submit]:hover {
+    .form-row input[type=button]:hover {
         background:#286090;
     }
-    }
+}

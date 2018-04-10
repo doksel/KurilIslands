@@ -9,7 +9,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/126617a883.js"></script>
     <script src="./js/faideInBackground.js"></script>
-    <script src="./js/showForm.js"></script>
 </head>
 <body>
     <nav>            
@@ -137,36 +136,33 @@
             </div>              
     </footer>
     <div class="form">
-        	<form method='post' class='reg-form'>
-
+        	<form action='' method="post" class='reg-form'>
                     <div class='form-row'>
                         <label for='form_fname'>First Name: </label>
                         <input type='text' id='form_fname' name='first_name'>
                       </div>
-            
                       <div class='form-row'>
                         <label for='form_sname'>Second Name: </label>
                         <input type='text' id='form_sname' name='second_name'>
                     </div>
-            
                     <div class='form-row'>
                         <label for='form_email'>Email: </label>
                         <input type='email' id='form_email' name='email'>
                     </div>
-            
                     <div class='form-row'>
                         <label for='form_phone'>Phone: </label>
                         <input type='text' id='form_phone' name='phone'>
                     </div>
-            
                     <div class='form-row'>
                         <label for='form_about'>About myself: </label>
                         <textarea id='form_about' name='about'></textarea>
                     </div>
-            
                     <div class="form-row">
-                        <input type="submit" value='Go'>
+                        <input type="button" onclick="validateForm()" value='Go'>
                     </div>
     </div>
+
+    <script src="./js/showForm.js"></script>
+    <script src="./js/validateForm.js"></script>
 </body>
 </html>
