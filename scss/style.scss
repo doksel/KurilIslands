@@ -7,6 +7,20 @@
     margin: 0;
 }
 
+.flex-around{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {}
@@ -49,10 +63,11 @@ nav{
             ul{
                 height: 100%;
                 list-style: none;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
+                @extend .flex-around;
+                // display: flex;
+                // flex-direction: row;
+                // justify-content: space-around;
+                // align-items: center;
                 a{
                     display: block;
                     color: black;
@@ -79,10 +94,11 @@ header{
     -o-background-size: cover;
     background-size: cover;
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .flex-center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
     position: relative;
     h1, p{
         z-index: 3;
@@ -108,17 +124,19 @@ main{
 }
 
 .latestPost{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
+    @extend .flex-around;
+    // display: flex;
+    // align-items: center;
+    // flex-direction: column;
+    // justify-content: space-around;
     h1{
         margin: 50px;
     }
     .wrap-posts{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        @extend .flex-around;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-around;
         height: 30vh;
         margin: 0 50px 50px 50px;
         .post{
@@ -158,17 +176,19 @@ main{
 
 footer{
     height: 100px;
-    display: flex;
-    align-items: center;
+    @extend .flex-around;
+    // display: flex;
+    // align-items: center;
     justify-content: space-between;    
     .menu{
         flex: 2;
         ul{
             height: 100%;
             list-style: none;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+            @extend .flex-around;
+            // display: flex;
+            // justify-content: space-around;
+            // align-items: center;
             a{
                 display: block;
                 color: black;
@@ -194,42 +214,51 @@ footer{
         }
     } 
 }
-
+.icons{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
 .faf-arrow{
     height: 12px;
     width: 12px;
-    background: url(../images/icons/arrow.svg) no-repeat;
     background-size: cover;
+    background: url(../images/icons/arrow.svg) no-repeat;
 }
 .faf-facebook{
-    height: 100%;
-    width: 100%;
+    @extend .icons;
+    // height: 100%;
+    // width: 100%;
+    // background-size: cover;
     background: url(../images/icons/facebook.svg) no-repeat;
-    background-size: cover;
 }
 .faf-houzz{   
-    height: 100%;
-    width: 100%; 
+    @extend .icons;
+    // height: 100%;
+    // width: 100%; 
+    // background-size: cover;
     background: url(../images/icons/houzz.svg) no-repeat;
-    background-size: cover;
 }
 .faf-instagram{    
-    height: 100%;
-    width: 100%;
+    @extend .icons;
+    // height: 100%;
+    // width: 100%;
+    // background-size: cover;
     background: url(../images/icons/instagram.svg) no-repeat;
-    background-size: cover;
 }
 .faf-search{  
-    height: 100%;
-    width: 100%;  
+    @extend .icons;
+    // height: 100%;
+    // width: 100%;  
+    // background-size: cover;
     background: url(../images/icons/search.svg) no-repeat;
-    background-size: cover;
 }
 .faf-twitter{  
-    height: 100%;
-    width: 100%;  
+    @extend .icons;
+    // height: 100%;
+    // width: 100%;  
+    // background-size: cover;
     background: url(../images/icons/twitter.svg) no-repeat;
-    background-size: cover;
 }
 
 .form{

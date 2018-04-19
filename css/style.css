@@ -3,6 +3,18 @@
   padding: 0;
   margin: 0; }
 
+.flex-around, nav .wraper .menu ul, .latestPost, .latestPost .wrap-posts, footer, footer .menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
+.flex-center, header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 body {
   width: 100vw;
   min-width: 320px;
@@ -34,11 +46,7 @@ nav {
       flex: 5; }
       nav .wraper .menu ul {
         height: 100%;
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center; }
+        list-style: none; }
         nav .wraper .menu ul a {
           display: block;
           color: black;
@@ -59,10 +67,6 @@ header {
   -o-background-size: cover;
   background-size: cover;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: relative; }
   header h1, header p {
     z-index: 3; }
@@ -80,57 +84,44 @@ main {
     main .wraper article h5 {
       text-transform: uppercase; }
 
-.latestPost {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around; }
-  .latestPost h1 {
-    margin: 50px; }
-  .latestPost .wrap-posts {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 30vh;
-    margin: 0 50px 50px 50px; }
-    .latestPost .wrap-posts .post {
-      height: 100%;
-      display: grid;
-      grid-gap: 10px;
-      margin: 0 20px;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "img title" "img p" "img read-more"; }
-      .latestPost .wrap-posts .post .img {
-        background: url(../images/bg3.jpg) no-repeat;
-        background-size: cover;
-        grid-area: img; }
-      .latestPost .wrap-posts .post .title, .latestPost .wrap-posts .post p, .latestPost .wrap-posts .post .read-more {
-        margin: 0 10px; }
-      .latestPost .wrap-posts .post .title {
-        margin-top: 30px;
-        color: #b6b5b5;
-        grid-area: title; }
-      .latestPost .wrap-posts .post p {
-        grid-area: p;
-        font-size: 16px;
-        color: black; }
-      .latestPost .wrap-posts .post .read-more {
-        grid-area: read-more;
-        width: auto; }
+.latestPost h1 {
+  margin: 50px; }
+.latestPost .wrap-posts {
+  height: 30vh;
+  margin: 0 50px 50px 50px; }
+  .latestPost .wrap-posts .post {
+    height: 100%;
+    display: grid;
+    grid-gap: 10px;
+    margin: 0 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "img title" "img p" "img read-more"; }
+    .latestPost .wrap-posts .post .img {
+      background: url(../images/bg3.jpg) no-repeat;
+      background-size: cover;
+      grid-area: img; }
+    .latestPost .wrap-posts .post .title, .latestPost .wrap-posts .post p, .latestPost .wrap-posts .post .read-more {
+      margin: 0 10px; }
+    .latestPost .wrap-posts .post .title {
+      margin-top: 30px;
+      color: #b6b5b5;
+      grid-area: title; }
+    .latestPost .wrap-posts .post p {
+      grid-area: p;
+      font-size: 16px;
+      color: black; }
+    .latestPost .wrap-posts .post .read-more {
+      grid-area: read-more;
+      width: auto; }
 
 footer {
   height: 100px;
-  display: flex;
-  align-items: center;
   justify-content: space-between; }
   footer .menu {
     flex: 2; }
     footer .menu ul {
       height: 100%;
-      list-style: none;
-      display: flex;
-      justify-content: space-around;
-      align-items: center; }
+      list-style: none; }
       footer .menu ul a {
         display: block;
         color: black;
@@ -149,41 +140,31 @@ footer {
       text-align: center;
       line-height: 40px; }
 
+.icons, .faf-facebook, .faf-houzz, .faf-instagram, .faf-search, .faf-twitter {
+  height: 100%;
+  width: 100%;
+  background-size: cover; }
+
 .faf-arrow {
   height: 12px;
   width: 12px;
-  background: url(../images/icons/arrow.svg) no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background: url(../images/icons/arrow.svg) no-repeat; }
 
 .faf-facebook {
-  height: 100%;
-  width: 100%;
-  background: url(../images/icons/facebook.svg) no-repeat;
-  background-size: cover; }
+  background: url(../images/icons/facebook.svg) no-repeat; }
 
 .faf-houzz {
-  height: 100%;
-  width: 100%;
-  background: url(../images/icons/houzz.svg) no-repeat;
-  background-size: cover; }
+  background: url(../images/icons/houzz.svg) no-repeat; }
 
 .faf-instagram {
-  height: 100%;
-  width: 100%;
-  background: url(../images/icons/instagram.svg) no-repeat;
-  background-size: cover; }
+  background: url(../images/icons/instagram.svg) no-repeat; }
 
 .faf-search {
-  height: 100%;
-  width: 100%;
-  background: url(../images/icons/search.svg) no-repeat;
-  background-size: cover; }
+  background: url(../images/icons/search.svg) no-repeat; }
 
 .faf-twitter {
-  height: 100%;
-  width: 100%;
-  background: url(../images/icons/twitter.svg) no-repeat;
-  background-size: cover; }
+  background: url(../images/icons/twitter.svg) no-repeat; }
 
 .form {
   padding: 20px;
