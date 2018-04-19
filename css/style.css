@@ -194,7 +194,8 @@ footer {
   background: rgba(77, 169, 245, 0.856);
   background-size: cover;
   z-index: 10;
-  color: white; }
+  color: white;
+  opacity: 0; }
   .form .form-row {
     margin-bottom: 8px;
     overflow: hidden; }
