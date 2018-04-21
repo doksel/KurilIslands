@@ -137,7 +137,7 @@
             </div>              
     </footer>
     <div class="form">
-        	<form action='#' method="post" class='reg-form'>
+        	<form action='#' method="post" class='reg-form'onsubmit='return validateForm()'>
                     <div class='form-row'>
                         <label for='form_fname'>First Name: </label>
                         <input type='text' id='form_fname' name='first_name'  max="20">
@@ -163,7 +163,7 @@
                         <textarea id='form_about' name='about'></textarea>
                     </div>
                     <div class="form-row">
-                        <input type="button" onclick="validateForm()" value='Go'>
+                        <input type="submit" value='Send massage'>
                     </div>
     </div>
 

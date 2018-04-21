@@ -231,29 +231,32 @@ footer{
     left: 50%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background: rgba(185, 235, 255, 0.856);
+    background: rgb(245, 245, 245);
     background-size: cover;
     z-index: 10;
-    color: white;
+    color: black;
     opacity: 0;
     .form-row {
         margin-bottom: 8px;
         overflow: hidden;
         input, span {
             float: right;
-            height: 19px;
-            line-height: 19px;
+            height: 30px;
+            line-height: 30px;
             margin: 0px;
             padding: 0px 5px;
-            width: 287px;
+            width: 300px;
             border: solid #ABADB3 1px;
+        }
+        span{
+            color: red;
         }
         textarea {
             height: 90px;
             line-height: 16px;
             font-size: 12px;
             padding: 0px 5px;
-            width: 404px;
+            width: 400px;
             border: 1px solid #ABADB3;
         }
         input[type=button] {
@@ -269,7 +272,7 @@ footer{
         }
     }
     .reg-form {
-        width: 416px;
+        width: 420px;
         margin: 0 auto;
     }
 }
